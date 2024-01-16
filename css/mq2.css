@@ -1,0 +1,74 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+ul{
+	list-style: none;
+}
+#container{
+	margin: 100px auto;
+	width: 100%;
+	max-width: 650px;
+	border: 1px solid #ccc;
+}
+.card{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.card li{
+	display: flex;
+	gap: 10px;
+	padding: 20px;
+	text-align: center;
+}
+.words{
+	display: flex;
+	width: 100%;
+	min-width: calc(650px / 2);
+	flex-direction: column;
+	justify-content: center;
+	gap:10px;
+}
+/* 너비 768px일때 */
+/* @media all and (max-width:768px){
+	.card li{
+		gap: 10px;
+		font-size: 14;
+		color: red;
+		flex-direction: column;
+	}
+	#container{
+		margin: 100px auto;
+		width: 40%;
+		max-width: 650px;
+		background-color: antiquewhite;
+	}
+} */
+
+/* 너비 320px일때 */
+/* 검정컬러 */
+/* 폰트사이즈 13px */
+/* 카드안 있는 padding 10px */
+@media all and (max-width:320px){
+	#container{
+		border: 1px solid #ccc;
+		width: 100%;
+		
+	}
+	.card li{
+		/* display: flex; */
+		/* gap: 10px; */
+		/* padding: 20px; */
+		/* text-align: center; */
+		/* font-size: 13px; */
+		/* color: blueviolet; */
+	}
+	.words{
+		/* font-size: 8px; */
+		
+	}
+}
